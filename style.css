@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #222222;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  color: #2468a2;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  width: min(980px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.hero {
+  padding: 64px 0 24px;
+}
+
+.title {
+  margin: 0;
+  font-size: 56px;
+  line-height: 1.08;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.subtitle {
+  max-width: 860px;
+  margin: 16px auto 0;
+  font-size: 28px;
+  line-height: 1.25;
+  font-weight: 400;
+  overflow-wrap: anywhere;
+}
+
+.authors {
+  margin: 22px 0 4px;
+  font-size: 20px;
+}
+
+.venue {
+  margin: 0;
+  color: #666666;
+  font-size: 17px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.button {
+  display: inline-block;
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: #222222;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button.muted {
+  background: #444444;
+}
+
+.button.disabled {
+  background: #777777;
+  cursor: default;
+}
+
+.section {
+  padding: 42px 0;
+}
+
+.section.light {
+  background: #f5f5f5;
+}
+
+.text {
+  max-width: 860px;
+}
+
+h2 {
+  margin: 0 0 18px;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+p {
+  margin: 0 0 18px;
+}
+
+.caption {
+  max-width: 900px;
+  margin: 14px auto 0;
+  color: #444444;
+  font-size: 17px;
+  text-align: center;
+}
+
+.teaser {
+  padding-top: 24px;
+}
+
+.figure-stack {
+  display: grid;
+  gap: 24px;
+}
+
+pre {
+  overflow-x: auto;
+  margin: 0;
+  padding: 18px 22px;
+  border-radius: 6px;
+  background: #f0f0f0;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+footer {
+  padding: 28px 0 42px;
+  color: #666666;
+  font-size: 16px;
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    width: min(100% - 56px, 980px);
+  }
+
+  .hero {
+    padding-top: 42px;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

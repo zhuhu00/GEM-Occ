@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="HI-Occ and GEM-Occ project page.">
+  <meta name="keywords" content="HI-Occ, GEM-Occ, semantic occupancy, embodied mapping, Gaussian memory">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HI-Occ / GEM-Occ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+  <div class="container center">
+    <h1 class="title">HI-Occ / GEM-Occ</h1>
+    <h2 class="subtitle">From Visual Geometry Evidence to Embodied Semantic Occupancy Memory</h2>
+    <p class="authors">Anonymous Authors</p>
+    <p class="venue">CoRL 2026 Submission</p>
+
+    <div class="links">
+      <a class="button" href="https://github.com/zhuhu00/GEM-Occ">Code</a>
+      <a class="button" href="#abstract">Abstract</a>
+      <a class="button muted" href="#citation">BibTeX</a>
+      <span class="button disabled">Paper coming soon</span>
+      <span class="button disabled">Data coming soon</span>
+    </div>
+  </div>
+</section>
+
+<section class="section teaser">
+  <div class="container">
+    <img src="assets/teaser.png" alt="Overview of HI-Occ and GEM-Occ.">
+    <p class="caption">
+      <b>HI-Occ</b> provides hierarchical indoor semantic occupancy annotations across local views,
+      rooms, and connected buildings. <b>GEM-Occ</b> builds persistent semantic Gaussian memory for
+      embodied occupancy mapping.
+    </p>
+  </div>
+</section>
+
+<section id="abstract" class="section">
+  <div class="container text">
+    <h2>Abstract</h2>
+    <p>
+      Semantic occupancy provides a structured spatial memory for embodied indoor agents by jointly
+      representing occupied regions, observed free space, unknown areas, and object semantics.
+      However, existing indoor occupancy benchmarks and methods mainly focus on single-view
+      prediction or room-level online perception, leaving long-horizon semantic mapping across
+      connected indoor spaces underexplored.
+    </p>
+    <p>
+      We introduce <b>HI-Occ</b>, a hierarchical indoor occupancy benchmark that unifies ScanNet,
+      ScanNet++, and Matterport3D under a common sparse semantic occupancy format while preserving
+      their native observation geometries, including perspective RGB-D frames and pano-centric
+      observation groups. HI-Occ supports local semantic occupancy prediction, room-level online
+      occupancy mapping, and building-level mapping across connected panoramic environments.
+    </p>
+    <p>
+      We further propose <b>GEM-Occ</b>, a Gaussian Evidence Memory framework for semantic occupancy
+      mapping. Rather than using pointmaps as persistent map states, GEM-Occ treats local visual
+      geometry predictions as transient evidence, converts them into semantic Gaussian occupancy
+      evidence and free-space ray evidence, and fuses them into a persistent hierarchical memory
+      through visibility- and uncertainty-aware causal updates.
+    </p>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <h2>HI-Occ Benchmark</h2>
+    <img src="assets/dataset_pipeline.png" alt="HI-Occ dataset pipeline.">
+    <p class="caption">
+      HI-Occ aligns ScanNet, ScanNet++, and Matterport3D into a shared sparse semantic occupancy
+      representation while keeping each dataset's native observation geometry.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>GEM-Occ Method</h2>
+    <img src="assets/method_pipeline.png" alt="GEM-Occ method pipeline.">
+    <p class="caption">
+      GEM-Occ converts local visual geometry predictions into semantic Gaussian occupancy evidence
+      and explicit free-space ray evidence, then updates local caches, room submaps, and a
+      building-level graph.
+    </p>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <h2>Qualitative Results</h2>
+    <div class="figure-stack">
+      <img src="assets/occ_comparison.png" alt="Semantic occupancy qualitative comparison.">
+      <img src="assets/online_mapping.png" alt="Online occupancy mapping visualization.">
+      <img src="assets/streaming_building.png" alt="Building-level occupancy mapping visualization.">
+    </div>
+    <p class="caption">
+      GEM-Occ improves local occupancy prediction, online map stability, free-space reasoning,
+      revisit consistency, and building-level scalability.
+    </p>
+  </div>
+</section>
+
+<section id="citation" class="section">
+  <div class="container text">
+    <h2>BibTeX</h2>
+    <pre><code>@misc{hiocc_gemocc_2026,
+  title  = {From Visual Geometry Evidence to Embodied Semantic Occupancy Memory},
+  author = {Anonymous Authors},
+  year   = {2026}
+}</code></pre>
+  </div>
+</section>
+
+<footer>
+  <div class="container center">
+    <p>Project page draft for <a href="https://github.com/zhuhu00/GEM-Occ">GEM-Occ</a>.</p>
+  </div>
+</footer>
+
+</body>
+</html>
