@@ -53,8 +53,35 @@ img {
   font-size: 20px;
 }
 
+.authors div + div {
+  margin-top: 3px;
+}
+
+.authors sup,
+.affiliations sup {
+  font-size: 0.68em;
+  line-height: 0;
+}
+
+.affiliations {
+  max-width: 920px;
+  margin: 8px auto 0;
+  color: #555555;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.affiliations div + div {
+  margin-top: 2px;
+}
+
+.author-note {
+  color: #666666;
+  font-size: 14px;
+}
+
 .venue {
-  margin: 0;
+  margin: 10px 0 0;
   color: #666666;
   font-size: 17px;
 }
@@ -162,6 +189,14 @@ footer {
 
   .subtitle {
     font-size: 18px;
+  }
+
+  .authors {
+    font-size: 17px;
+  }
+
+  .affiliations {
+    font-size: 13px;
   }
 
   h2 {
