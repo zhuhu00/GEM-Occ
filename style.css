@@ -102,6 +102,8 @@ img {
   padding: 8px 24px;
   border-radius: 999px;
   border: 2px solid transparent;
+  background: #222222;
+  color: #ffffff;
   font-size: 15px;
   font-weight: 600;
   line-height: 1.4;
@@ -114,26 +116,28 @@ img {
   outline-offset: 2px;
 }
 
-.button-primary {
-  background: #2468a2;
-  color: #ffffff;
+a.button:hover,
+a.button:focus-visible {
+  background: #000000;
 }
 
-.button-primary:hover,
-.button-primary:focus-visible {
-  background: #1a4f7a;
+.button-disabled {
+  border-color: #d1d1d1;
+  background: #f1f1f1;
+  color: #666666;
+  cursor: default;
 }
 
-.button-outline {
-  border-color: #bbbbbb;
-  background: transparent;
-  color: #222222;
-}
-
-.button-outline:hover,
-.button-outline:focus-visible {
-  border-color: #2468a2;
-  color: #2468a2;
+.button-status {
+  margin-left: 7px;
+  padding-left: 7px;
+  border-left: 1px solid #c7c7c7;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .section {
@@ -219,8 +223,13 @@ pre {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
-    max-width: 260px;
+    max-width: 320px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .button {
+    padding-right: 12px;
+    padding-left: 12px;
   }
 }
