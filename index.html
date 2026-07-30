@@ -52,7 +52,7 @@
 
 <section class="section teaser">
   <div class="container">
-    <img src="assets/teaser.png" alt="Overview of HI-Occ and GEM-Occ.">
+    <img src="assets/teaser_v1_pdf_p1_web_20260730.png" alt="Overview of HI-Occ and GEM-Occ.">
     <p class="caption">
       <b>HI-Occ</b> provides hierarchical indoor semantic occupancy annotations across local views,
       rooms, and connected buildings. <b>GEM-Occ</b> builds persistent semantic Gaussian memory for
@@ -89,20 +89,39 @@
 </section>
 
 <section class="section light">
-  <div class="container">
+  <div class="container figure-container">
     <h2>HI-Occ Benchmark</h2>
-    <img src="assets/dataset_pipeline.png" alt="HI-Occ dataset pipeline.">
-    <p class="caption">
-      HI-Occ aligns ScanNet, ScanNet++, and Matterport3D into a shared sparse semantic occupancy
-      representation while keeping each dataset's native observation geometry.
-    </p>
+    <div class="figure-stack">
+      <figure>
+        <div class="figure-media" tabindex="0" aria-label="Scrollable HI-Occ dataset comparison figure">
+          <img class="wide-figure" src="assets/hiocc_data_comparisons_pdf_p1_web_20260730.png"
+               alt="HI-Occ examples spanning perspective observations, panoramic observations, room-level occupancy, and building-level occupancy.">
+        </div>
+        <figcaption class="caption">
+          <b>Hierarchical indoor occupancy data.</b> HI-Occ unifies perspective RGB-D observations
+          from ScanNet and ScanNet++ with panoramic, connected-space observations from Matterport3D,
+          supporting local, room-level, and building-level occupancy evaluation.
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="figure-media" tabindex="0" aria-label="Scrollable HI-Occ annotation pipeline figure">
+          <img class="wide-figure" src="assets/dataset_pipeline_pdf_p1_web_20260730.png"
+               alt="HI-Occ annotation pipeline from reconstructed semantic scenes to visibility-filtered sparse semantic occupancy.">
+        </div>
+        <figcaption class="caption">
+          <b>HI-Occ annotation pipeline.</b> Calibrated observations and annotated meshes are
+          converted into scene-level semantic voxels, cropped around each frame or panorama,
+          visibility-filtered, and saved as sparse semantic occupancy annotations.
+        </figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
     <h2>GEM-Occ Method</h2>
-    <img src="assets/method_pipeline.png" alt="GEM-Occ method pipeline.">
+    <img src="assets/pipeline_v1_pdf_p1_web_20260730.png" alt="GEM-Occ method pipeline.">
     <p class="caption">
       GEM-Occ converts local visual geometry predictions into semantic Gaussian occupancy evidence
       and explicit free-space ray evidence, then updates local caches, room submaps, and a
@@ -112,17 +131,30 @@
 </section>
 
 <section class="section light">
-  <div class="container">
+  <div class="container figure-container">
     <h2>Qualitative Results</h2>
     <div class="figure-stack">
-      <img src="assets/occ_comparison.png" alt="Semantic occupancy qualitative comparison.">
-      <img src="assets/online_mapping.png" alt="Online occupancy mapping visualization.">
-      <img src="assets/streaming_building.png" alt="Building-level occupancy mapping visualization.">
+      <figure>
+        <div class="figure-media" tabindex="0" aria-label="Scrollable local occupancy comparison figure">
+          <img class="wide-figure" src="assets/occ_data_comparisons_pdf_p1_web_20260730.png"
+               alt="Local semantic occupancy predictions from GEM-Occ and five comparison methods alongside images and ground truth.">
+        </div>
+        <figcaption class="caption">
+          <b>Local semantic occupancy prediction.</b> GEM-Occ produces cleaner semantic structure
+          and fewer spurious occupied regions than EmbodiedOcc, SplatSSC, GPOcc, and ISO.
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="figure-media" tabindex="0" aria-label="Scrollable building-level occupancy mapping figure">
+          <img class="wide-figure" src="assets/streaming_building_all_pdf_p1_web_20260730.png"
+               alt="Building-level occupancy mapping across connected panoramic environments.">
+        </div>
+        <figcaption class="caption">
+          <b>Building-level mapping.</b> Hierarchical Gaussian memory scales occupancy mapping from
+          local observations to connected multi-room environments.
+        </figcaption>
+      </figure>
     </div>
-    <p class="caption">
-      GEM-Occ improves local occupancy prediction, online map stability, free-space reasoning,
-      revisit consistency, and building-level scalability.
-    </p>
   </div>
 </section>
 

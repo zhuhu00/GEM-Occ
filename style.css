@@ -23,6 +23,10 @@ img {
   margin: 0 auto;
 }
 
+.figure-container {
+  width: min(1180px, calc(100% - 32px));
+}
+
 .center {
   text-align: center;
 }
@@ -177,7 +181,27 @@ p {
 
 .figure-stack {
   display: grid;
-  gap: 24px;
+  gap: 36px;
+}
+
+.figure-stack figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.figure-media {
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: thin;
+}
+
+.figure-media:focus-visible {
+  outline: 3px solid rgba(36, 104, 162, 0.25);
+  outline-offset: 4px;
+}
+
+.figure-media img {
+  width: 100%;
 }
 
 pre {
@@ -231,5 +255,10 @@ pre {
   .button {
     padding-right: 12px;
     padding-left: 12px;
+  }
+
+  .figure-media .wide-figure {
+    width: 900px;
+    max-width: none;
   }
 }
