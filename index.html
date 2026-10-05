@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="GEM-Occ: From Visual Geometry Evidence to Embodied Semantic Occupancy Memory.">
-  <meta name="keywords" content="HI-Occ, GEM-Occ, semantic occupancy, embodied mapping, Gaussian memory">
+  <meta name="keywords" content="HIOcc, HI-Occ, GEM-Occ, semantic occupancy, embodied mapping, Gaussian memory">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GEM-Occ: From Visual Geometry Evidence to Embodied Semantic Occupancy Memory</title>
   <link rel="stylesheet" href="style.css">
@@ -14,37 +14,42 @@
   <div class="container center">
     <h1 class="title">GEM-Occ: From Visual Geometry Evidence to Embodied Semantic Occupancy Memory</h1>
     <div class="authors">
-      <div>
-        <a href="https://github.com/zhuhu00" target="_blank" rel="noopener">Hu Zhu</a><sup>1,2</sup>,
-        <a href="https://arlo0o.github.io/libohan.github.io/" target="_blank" rel="noopener">Bohan Li</a><sup>2,3</sup>,
-        <a href="https://xiandaguo.net/" target="_blank" rel="noopener">Xianda Guo</a><sup>4</sup>,
-        <a href="https://ericliuhhh.github.io/" target="_blank" rel="noopener">Hongsi Liu</a><sup>2</sup>,
-        <a href="https://scholar.google.com/citations?user=8EQlGGoAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener">Baorui Peng</a><sup>6</sup>
+      <div class="author-row">
+        <span class="author"><a href="https://github.com/zhuhu00" target="_blank" rel="noopener">Hu Zhu</a><sup>1,5</sup></span>
+        <span class="author"><a href="https://arlo0o.github.io/libohan.github.io/" target="_blank" rel="noopener">Bohan Li</a><sup>2,5</sup></span>
+        <span class="author"><a href="https://xiandaguo.net/" target="_blank" rel="noopener">Xianda Guo</a><sup>3</sup></span>
+        <span class="author">Yanlun Peng<sup>4</sup></span>
+        <span class="author"><a href="https://ericliuhhh.github.io/" target="_blank" rel="noopener">Hongsi Liu</a><sup>5</sup></span>
+        <span class="author"><a href="https://scholar.google.com/citations?user=8EQlGGoAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener">Baorui Peng</a><sup>6</sup></span>
       </div>
-      <div>
-        <a href="https://scholar.google.com/citations?user=xtj9MIMAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener">Mingqi Yuan</a><sup>5</sup>,
-        <a href="https://scholar.google.com/citations?user=byaSC-kAAAAJ&amp;hl=en" target="_blank" rel="noopener">Xin Jin</a><sup>2</sup>,
-        <a href="https://scholar.google.com/citations?user=_cUfvYQAAAAJ&amp;hl=en" target="_blank" rel="noopener">Wenjun Zeng</a><sup>2,*</sup>,
-        and <a href="https://scholar.google.com/citations?user=w2HXPUUAAAAJ&amp;hl=en" target="_blank" rel="noopener">Chang Wen Chen</a><sup>1</sup>
+      <div class="author-row">
+        <span class="author">Xiaofeng Wang<sup>7</sup></span>
+        <span class="author"><a href="https://scholar.google.com/citations?user=xtj9MIMAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener">Mingqi Yuan</a><sup>8</sup></span>
+        <span class="author"><a href="https://scholar.google.com/citations?user=byaSC-kAAAAJ&amp;hl=en" target="_blank" rel="noopener">Xin Jin</a><sup>5</sup></span>
+        <span class="author"><a href="https://scholar.google.com/citations?user=_cUfvYQAAAAJ&amp;hl=en" target="_blank" rel="noopener">Wenjun Zeng</a><sup>5</sup></span>
+        <span class="author"><a href="https://scholar.google.com/citations?user=w2HXPUUAAAAJ&amp;hl=en" target="_blank" rel="noopener">Chang Wen Chen</a><sup>1</sup></span>
       </div>
     </div>
     <div class="affiliations">
-      <div>
-        <sup>1</sup>The Hong Kong Polytechnic University&nbsp;&nbsp;
-        <sup>2</sup>Eastern Institute of Technology&nbsp;&nbsp;
-        <sup>3</sup>Shanghai Jiao Tong University
+      <div class="affiliation-row">
+        <span class="affiliation"><sup>1</sup>The Hong Kong Polytechnic University</span>
+        <span class="affiliation"><sup>2</sup>Shanghai Jiao Tong University</span>
       </div>
-      <div>
-        <sup>4</sup>Wuhan University&nbsp;&nbsp;
-        <sup>5</sup>The University of Hong Kong&nbsp;&nbsp;
-        <sup>6</sup>Georgia Institute of Technology
+      <div class="affiliation-row">
+        <span class="affiliation"><sup>3</sup>Wuhan University</span>
+        <span class="affiliation"><sup>4</sup>Great Wall Motor</span>
+        <span class="affiliation"><sup>5</sup>Eastern Institute of Technology, Ningbo</span>
       </div>
-      <div class="author-note">* Corresponding author</div>
+      <div class="affiliation-row">
+        <span class="affiliation"><sup>6</sup>Georgia Institute of Technology</span>
+        <span class="affiliation"><sup>7</sup>Tsinghua University</span>
+        <span class="affiliation"><sup>8</sup>The University of Hong Kong</span>
+      </div>
     </div>
     <div class="links">
       <a class="button" href="https://arxiv.org/pdf/2607.05543">PDF</a>
       <a class="button" href="#citation">BibTeX</a>
-      <span class="button button-disabled" aria-disabled="true">Code <span class="button-status">Coming Soon</span></span>
+      <a class="button" href="https://github.com/zhuhu00/GEM-Occ">Code</a>
       <a class="button" href="https://huggingface.co/datasets/zhuhu00/HI-Occ">Data</a>
     </div>
   </div>
@@ -52,9 +57,9 @@
 
 <section class="section teaser">
   <div class="container">
-    <img src="assets/teaser_v1_pdf_p1_web_20260730.png" alt="Overview of HI-Occ and GEM-Occ.">
+    <img src="assets/teaser_v1_pdf_p1_web_20260730.png" alt="Overview of HIOcc and GEM-Occ.">
     <p class="caption">
-      <b>HI-Occ</b> provides hierarchical indoor semantic occupancy annotations across local views,
+      <b>HIOcc</b> provides hierarchical indoor semantic occupancy annotations across local views,
       rooms, and connected buildings. <b>GEM-Occ</b> builds persistent semantic Gaussian memory for
       embodied occupancy mapping.
     </p>
@@ -65,53 +70,57 @@
   <div class="container text">
     <h2>Abstract</h2>
     <p>
-      Semantic occupancy provides a structured spatial memory for embodied indoor agents by jointly
-      representing occupied regions, observed free space, unknown areas, and object semantics.
-      However, existing indoor occupancy benchmarks and methods mainly focus on single-view
-      prediction or room-level online perception, leaving long-horizon semantic mapping across
-      connected indoor spaces underexplored.
+      Embodied agents exploring indoor environments require reliable semantic occupancy memory
+      that persists across observations and revisits. Building such memory is challenging because
+      each observation provides incomplete and uncertain geometric and semantic evidence.
     </p>
     <p>
-      We introduce <b>HI-Occ</b>, a hierarchical indoor occupancy benchmark that unifies ScanNet,
-      ScanNet++, and Matterport3D under a common sparse semantic occupancy format while preserving
-      their native observation geometries, including perspective RGB-D frames and pano-centric
-      observation groups. HI-Occ supports local semantic occupancy prediction, room-level online
-      occupancy mapping, and building-level mapping across connected panoramic environments.
+      We introduce GEM-Occ, a Gaussian Evidence Memory framework that consolidates evidence
+      accumulated over time into persistent semantic occupancy memory. Local predictions are
+      converted into occupied semantic Gaussians and free-space ray evidence. Confidence- and
+      visibility-aware causal updates integrate supporting observations, suppress occupancy
+      contradicted by observed free space, and preserve previously observed structures through
+      occlusion. A hierarchical memory organization supports continued mapping and efficient
+      queries across connected indoor spaces.
     </p>
     <p>
-      We further propose <b>GEM-Occ</b>, a Gaussian Evidence Memory framework for semantic occupancy
-      mapping. Rather than using pointmaps as persistent map states, GEM-Occ treats local visual
-      geometry predictions as transient evidence, converts them into semantic Gaussian occupancy
-      evidence and free-space ray evidence, and fuses them into a persistent hierarchical memory
-      through visibility- and uncertainty-aware causal updates.
+      To evaluate this capability, we introduce HIOcc, a unified benchmark for embodied semantic
+      occupancy memory. HIOcc establishes a shared semantic label space and evaluation framework
+      spanning local prediction, room-level online mapping, and building-level mapping, while
+      accommodating perspective and panoramic observations.
+    </p>
+    <p>
+      Experiments on HIOcc demonstrate that GEM-Occ outperforms existing methods, enabling accurate
+      semantic occupancy prediction and consistent online mapping across spatial scales with
+      efficient memory usage and fast occupancy queries.
     </p>
   </div>
 </section>
 
 <section class="section light">
   <div class="container figure-container">
-    <h2>HI-Occ Benchmark</h2>
+    <h2>HIOcc Benchmark</h2>
     <div class="figure-stack">
       <figure>
-        <div class="figure-media" tabindex="0" aria-label="Scrollable HI-Occ dataset comparison figure">
+        <div class="figure-media" tabindex="0" aria-label="Scrollable HIOcc annotation comparison figure">
           <img class="wide-figure" src="assets/hiocc_data_comparisons_pdf_p1_web_20260730.png"
-               alt="HI-Occ examples spanning perspective observations, panoramic observations, room-level occupancy, and building-level occupancy.">
+               alt="HIOcc annotations compared with Occ-ScanNet, with additional ScanNet++ and Matterport3D examples.">
         </div>
         <figcaption class="caption">
-          <b>Hierarchical indoor occupancy data.</b> HI-Occ unifies perspective RGB-D observations
-          from ScanNet and ScanNet++ with panoramic, connected-space observations from Matterport3D,
-          supporting local, room-level, and building-level occupancy evaluation.
+          <b>HIOcc annotation quality.</b> Comparisons with Occ-ScanNet highlight preserved object
+          structures on ScanNet. Additional ScanNet++ and Matterport3D examples show perspective
+          and panoramic observations with their occupancy targets.
         </figcaption>
       </figure>
       <figure>
-        <div class="figure-media" tabindex="0" aria-label="Scrollable HI-Occ annotation pipeline figure">
+        <div class="figure-media" tabindex="0" aria-label="Scrollable HIOcc annotation pipeline figure">
           <img class="wide-figure" src="assets/dataset_pipeline_pdf_p1_web_20260730.png"
-               alt="HI-Occ annotation pipeline from reconstructed semantic scenes to visibility-filtered sparse semantic occupancy.">
+               alt="HIOcc annotation pipeline from annotated scene geometry to sparse semantic occupancy targets.">
         </div>
         <figcaption class="caption">
-          <b>HI-Occ annotation pipeline.</b> Calibrated observations and annotated meshes are
-          converted into scene-level semantic voxels, cropped around each frame or panorama,
-          visibility-filtered, and saved as sparse semantic occupancy annotations.
+          <b>HIOcc annotation pipeline.</b> Annotated scene geometry from ScanNet, ScanNet++, and
+          Matterport3D is mapped to shared semantic labels and converted into sparse occupancy
+          targets through viewpoint-dependent cropping and filtering.
         </figcaption>
       </figure>
     </div>
@@ -121,11 +130,12 @@
 <section class="section">
   <div class="container">
     <h2>GEM-Occ Method</h2>
-    <img src="assets/pipeline_v1_pdf_p1_web_20260730.png" alt="GEM-Occ method pipeline.">
+    <img src="assets/pipeline_v2_pdf_p1_web_20261005.png" alt="GEM-Occ evidence construction, causal memory updates, and semantic occupancy queries.">
     <p class="caption">
-      GEM-Occ converts local visual geometry predictions into semantic Gaussian occupancy evidence
-      and explicit free-space ray evidence, then updates local caches, room submaps, and a
-      building-level graph.
+      GEM-Occ converts streaming perspective and panoramic observations into semantic Gaussian
+      evidence and free-space rays. Confidence-weighted fusion reinforces supported structures,
+      free-space evidence revises contradicted occupancy, and visibility-aware updates retain
+      occluded memory. Occupancy queries read out local, room-level, and building-level predictions.
     </p>
   </div>
 </section>
@@ -137,7 +147,7 @@
       <figure>
         <div class="figure-media" tabindex="0" aria-label="Scrollable local occupancy comparison figure">
           <img class="wide-figure" src="assets/occ_data_comparisons_pdf_p1_web_20260730.png"
-               alt="Local semantic occupancy predictions from GEM-Occ and five comparison methods alongside images and ground truth.">
+               alt="Local semantic occupancy predictions from GEM-Occ and four comparison methods alongside images and ground truth.">
         </div>
         <figcaption class="caption">
           <b>Local semantic occupancy prediction.</b> GEM-Occ produces cleaner semantic structure
@@ -150,8 +160,9 @@
                alt="Building-level occupancy mapping across connected panoramic environments.">
         </div>
         <figcaption class="caption">
-          <b>Building-level mapping.</b> Hierarchical Gaussian memory scales occupancy mapping from
-          local observations to connected multi-room environments.
+          <b>Building-level mapping.</b> Two sequences show semantic occupancy memory evolving with
+          incoming panoramic observations. The upper sequence includes the final prediction and
+          ground-truth map; the lower sequence ends with a larger view of the accumulated map.
         </figcaption>
       </figure>
     </div>
@@ -162,8 +173,8 @@
   <div class="container text">
     <h2>BibTeX</h2>
     <pre><code>@misc{zhu2026gemoccvisualgeometryevidence,
-  title         = {GEM-Occ: From Visual Geometry Evidence to Embodied Semantic Occupancy Memory},
-  author        = {Hu Zhu and Bohan Li and Xianda Guo and Hongsi Liu and Baorui Peng and Mingqi Yuan and Xin Jin and Wenjun Zeng and Chang Wen Chen},
+  title         = {From Visual Geometry Evidence to Embodied Semantic Occupancy Memory},
+  author        = {Hu Zhu and Bohan Li and Xianda Guo and Yanlun Peng and Hongsi Liu and Baorui Peng and Xiaofeng Wang and Mingqi Yuan and Xin Jin and Wenjun Zeng and Chang Wen Chen},
   year          = {2026},
   eprint        = {2607.05543},
   archivePrefix = {arXiv},
